@@ -80,7 +80,7 @@ h1 {
   color: #b31667;
   font-size: 20px;
   margin-bottom: 5px;
-    font-family: "Kalam", cursive;
+  font-family: "Kalam", cursive;
 }
 
 .title_gray {
@@ -96,21 +96,23 @@ h1 {
   margin-right: auto;
   width: 700px;
 }
-dl {
-  width: 700px;
-  border-top: 1px solid #5c505c;
+
+.ttl_border {
+  border-bottom: solid 2px #888888;
 }
 
-dt {
-  border-bottom: 1px solid #5c505c;
+ul.newsList {
+  display: flex;
+  flex-flow: row wrap;
+  border-bottom: 0.1px solid #999;
+  padding: 10px 0;
+}
+
+ul.newsList li {
+  display: block;
   float: left;
-  padding: 20px 10px;
 }
-dd {
-  border-bottom: 1px solid #5c505c;
-  margin-left: 100px;
-  padding: 20px 10px;
-}
+
 a {
   background-color: #b31667;
   border-radius: 10px;
@@ -121,13 +123,13 @@ a {
 }
 
 /**About**/
-.about_background{
+.about_background {
   background-color: #f5f5f5;
   width: 100%;
   height: 400px;
 }
 
-.about_parent{
+.about_parent {
   margin-top: 100px;
   margin-bottom: 100px;
   margin-left: auto;
@@ -137,25 +139,25 @@ a {
   padding-bottom: 50px;
 }
 
-.ttl{
+.ttl {
   text-align: center;
 }
 
-.about_child{
+.about_child {
   display: flex;
   justify-content: space-between;
 }
 
-.about_content_top{
+.about_content_top {
   margin-bottom: 20px;
 }
 
-img{
+img {
   width: 40%;
 }
 
 /**Service**/
-.service_parent{
+.service_parent {
   margin-top: 100px;
   margin-bottom: 100px;
   margin-left: auto;
@@ -165,30 +167,30 @@ img{
   padding-bottom: 50px;
 }
 
-.service_grid{
+.service_grid {
   display: grid;
-  grid-template-rows:150px 150px;
+  grid-template-rows: 150px 150px;
   grid-template-columns: 2fr 1fr 1fr;
 }
 
-.img_service{
+.img_service {
   width: 100px;
 }
 
-.service_ttl_box1{
+.service_ttl_box1 {
   color: #fff;
   font-weight: bold;
   font-size: 15px;
   margin: 10px;
 }
 
-.service_sentence_box1{
+.service_sentence_box1 {
   color: #fff;
   font-size: 14px;
   padding-left: 30px;
   padding-right: 30px;
   text-align: left;
-  line-height:30px;
+  line-height: 30px;
 }
 
 .box1 {
@@ -207,13 +209,13 @@ img{
 }
 
 .box2,
-.box3{
-    display:flex;
-    max-width: 400px;
-    height: 150px;
+.box3 {
+  display: flex;
+  max-width: 400px;
+  height: 150px;
 }
 
-.service_ttl{
+.service_ttl {
   color: #fff;
   font-weight: bold;
   font-size: 15px;
@@ -221,7 +223,7 @@ img{
   text-align: left;
 }
 
-.service_ttl_box3{
+.service_ttl_box3 {
   color: #fff;
   font-weight: bold;
   font-size: 15px;
@@ -230,14 +232,13 @@ img{
   text-align: left;
 }
 
-
-.service_sentence{
+.service_sentence {
   color: #fff;
   font-size: 14px;
   padding-left: 30px;
   padding-right: 30px;
   text-align: left;
-  line-height:30px;
+  line-height: 30px;
 }
 
 .box3 {
@@ -246,16 +247,13 @@ img{
   background: #b2889b;
 }
 
-
-
-
 /**Blog**/
-.blog_background{
+.blog_background {
   background-color: #f5f5f5;
   width: 100%;
   height: 530px;
 }
-.blog{
+.blog {
   margin-top: 100px;
   margin-bottom: 100px;
   margin-left: auto;
@@ -265,7 +263,7 @@ img{
   padding-bottom: 50px;
 }
 
-.flex__item{
+.flex__item {
   display: flex;
   justify-content: space-between;
 }
@@ -276,37 +274,39 @@ img{
   border-radius: 30px;
 }
 
-.card__img{
+.card__img {
   position: relative;
 }
 
 .card__img img {
   width: 100%;
-  border-radius: 30px 30px 0px 0px;
+  border-radius: 20px 20px 0px 0px;
 }
 
-.card__img p{
+.card__img p {
   position: absolute;
-  top: 0;/*画像の左上に配置*/
+  top: 0; /*画像の左上に配置*/
   left: 0;
   margin: 0;
   color: #fff;
   background: #b31667;
   font-size: 14px;
-  line-height:1;
+  line-height: 1;
   padding: 10px 20px;
-  border-radius: 30px 0px 0px 0px;
+  border-radius: 20px 0px 0px 0px;
 }
 
 .card__content {
   padding: 15px 25px;
+  background-color: #fff;
+  border-radius: 0px 0px 20px 20px;
 }
 
 .card__ttl {
   font-size: 12.5px;
   margin-bottom: 30px;
   font-weight: 400;
-  line-height:25px;
+  line-height: 25px;
 }
 
 .tag {
@@ -318,8 +318,9 @@ img{
 
 .card__tag {
   display: inline-block;
-  color: #008888;
+  color: #888888;
   text-align: right;
+  padding-left: 50px;
 }
 
 .card__date {
@@ -328,7 +329,7 @@ img{
   text-align: left;
 }
 
-.blog_btn{
+.blog_btn {
   width: 200px;
   padding: 10px 0;
   color: #b31667;
@@ -336,10 +337,9 @@ img{
   border-radius: 30px;
   background: white;
   text-align: center;
-  margin:50px auto 0;
-  display:block;
+  margin: 50px auto 0;
+  display: block;
 }
-
 
 /**会社概要**/
 .company {
@@ -365,38 +365,38 @@ img{
 }
 
 /**画像**/
-.img_inforamtion{
+.img_inforamtion {
   position: relative;
 }
 
-.img_information img{
+.img_information img {
   width: 50%;
 }
 
-.img_ttl_parent{
+.img_ttl_parent {
   display: flex;
   justify-content: space-around;
 }
 
-.img_ttl{
+.img_ttl {
   font-size: 20px;
   color: #fff;
   transform: translate(0%, -800%);
 }
 
 /**お問合せ**/
-.contact{
+.contact {
   margin: 50px;
 }
 
-.contact_sentence{
-  font-size:15px;
+.contact_sentence {
+  font-size: 15px;
   font-weight: bold;
   text-align: center;
   margin: 10px;
 }
 
-.contact_line{
+.contact_line {
   margin-left: 2%;
   width: 1px;
   height: 20px;
@@ -404,7 +404,7 @@ img{
   margin: 0 auto;
 }
 
-.contact_btn{
+.contact_btn {
   position: relative;
   width: 200px;
   padding: 10px 0;
@@ -412,9 +412,9 @@ img{
   border-radius: 30px;
   text-align: center;
   font-size: 15px;
-  margin:10px auto 0;
-  display:block;
-  background: linear-gradient(-90deg,#b31667, #b31667cb);
+  margin: 10px auto 0;
+  display: block;
+  background: linear-gradient(-90deg, #b31667, #b31667cb);
   border-bottom: 5px solid #351023cb;
 }
 
